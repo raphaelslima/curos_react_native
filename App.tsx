@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import styled from 'styled-components/native';
+import Example from './src/components/example';
 
 export default function App() {
   const TextNew = styled.Text`
@@ -17,6 +18,8 @@ export default function App() {
       <TextNew>Open up App.tsx to start working on your app!</TextNew>
       <TextNew>teste</TextNew>
       <StatusBar style="auto" />
+      <Example text={'Exemplo 1'} />
+      <Example text={'Exemplo 2'} />
     </ViewMain>
   );
 }
