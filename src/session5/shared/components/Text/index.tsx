@@ -5,9 +5,10 @@ import { textTypes } from './textTypes';
 interface TextContainerProps extends TextProps {
   color?: string;
   type?: string;
+  margin?: string;
 }
 
-const Text = ({ color, type, ...props }: TextContainerProps) => {
+const Text = ({ color, type, margin, ...props }: TextContainerProps) => {
   const handleFontSize = () => {
     switch (type) {
       case textTypes.TITLE_BOLD:
@@ -39,6 +40,7 @@ const Text = ({ color, type, ...props }: TextContainerProps) => {
     <TextContainer
       fontSize={handleFontSize}
       color={color}
+      margin={margin}
       {...props}
     ></TextContainer>
   );

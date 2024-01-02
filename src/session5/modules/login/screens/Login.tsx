@@ -8,7 +8,13 @@ const Login = () => {
   return (
     <View>
       <ContainerLogin>
-        <Input />
+        <Input title="Email:" placeholder="Digite seu email" margin="8px" />
+        <Input
+          title="Senha:"
+          placeholder="Digite sua senha"
+          secureTextEntry
+          margin="8px"
+        />
         <Button
           title="ENTRAR"
           margin="8px"
